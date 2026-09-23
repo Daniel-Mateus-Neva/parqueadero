@@ -5,7 +5,6 @@ import edu.unilibre.datos.Parqueadero;
 import edu.unilibre.datos.TipoPago;
 
 import java.time.Duration;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class GestorParqueadero {

@@ -1,7 +1,5 @@
 package gestion;
 
-import edu.unilibre.datos.Bicicleta;
-import edu.unilibre.datos.Parqueadero;
 import edu.unilibre.datos.TipoPago;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
