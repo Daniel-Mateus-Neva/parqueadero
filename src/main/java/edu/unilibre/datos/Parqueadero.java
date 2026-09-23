@@ -1,6 +1,8 @@
 package edu.unilibre.datos;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Parqueadero {
     private int cupos;
@@ -8,8 +10,16 @@ public class Parqueadero {
     private double totalIngresos;
     private int contBici;
     private int bicisActivas;
-    private Bicicleta listaBicis;
+    private List<Bicicleta> listaBicis=new ArrayList<Bicicleta>();
     private LocalDateTime horaSalida;
+
+    public Parqueadero(){
+        cupos=20;
+        tarifa=10;
+        totalIngresos=0;
+        contBici=0;
+        bicisActivas=0;
+    }
 
     public int obtenerCupos() {
         return cupos;
@@ -41,11 +51,8 @@ public class Parqueadero {
     public void modificarBicisActivas(int bicisActivas) {
         this.bicisActivas = bicisActivas;
     }
-    public Bicicleta obtenerListaBicis() {
+    public List<Bicicleta> obtenerListaBicis() {
         return listaBicis;
-    }
-    public void obtenerListaBicis(Bicicleta listaBicis) {
-        this.listaBicis = listaBicis;
     }
     public LocalDateTime obtenerHoraSalida() {
         return horaSalida;

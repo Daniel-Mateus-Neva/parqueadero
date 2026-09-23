@@ -6,6 +6,11 @@ public class Propietario {
     private TipoPago efectivo;
     private TipoPago tarjeta;
 
+    public Propietario(int documento, String nombre) {
+        this.documento = documento;
+        this.nombre = nombre;
+    }
+
     public int obtenerDocumento() {
         return documento;
     }

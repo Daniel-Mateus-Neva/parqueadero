@@ -1,12 +1,20 @@
 package edu.unilibre.datos;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Bicicleta {
     private int serial;
     private String color;
     private int documPropietario;
-    private LocalDate horaEntrada;
+    private LocalDateTime horaEntrada;
+
+    public Bicicleta(int serial, String color, int documPropietario) {
+        this.serial = serial;
+        this.color = color;
+        this.documPropietario = documPropietario;
+        this.horaEntrada = LocalDateTime.now();
+    }
 
     public int obtenerSerial() {
         return serial;
@@ -30,10 +38,7 @@ public class Bicicleta {
     public void modificarDocPropietario(int docPropietario) {
         this.documPropietario = docPropietario;
     }
-    public LocalDate obtenerHoraEntrada() {
+    public LocalDateTime obtenerHoraEntrada() {
         return horaEntrada;
-    }
-    public void modificarHoraEntrada(LocalDate horaEntrada) {
-        this.horaEntrada = horaEntrada;
     }
 }
